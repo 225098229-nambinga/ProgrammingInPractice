@@ -1,12 +1,13 @@
 #include <stdio.h>
 
-int main() {
-    printf("=== Municipal Financial Management System ===\n");
-    printf("Welcome to Windhoek Municipality\n\n");
-
+int main(void)
+{
     char municipalityName[100];
     char mayorName[100];
     int population;
+
+    printf("=== Municipal Financial Management System ===\n");
+    printf("Welcome to Windhoek Municipality\n\n");
 
     printf("Enter Municipality Name: ");
     scanf("%49s", municipalityName);
@@ -19,8 +20,8 @@ int main() {
 
     printf("\n=== Municipal Report ===\n");
     printf("Municipality: %s\n", municipalityName);
-    printf("Mayor: %s\n", mayorName);
-    printf("Population: %d\n", population);
+    printf("Mayor       : %s\n", mayorName);
+    printf("Population  : %d\n", population);
 
     return 0;
 }
